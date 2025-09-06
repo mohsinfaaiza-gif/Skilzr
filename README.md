@@ -1,11 +1,15 @@
+# Skill Exchange App
 
-  # Skill Exchange Web App UI
+A simple web application that allows users to exchange skills and learn from each other.
 
-  This is a code bundle for Skill Exchange Web App UI. The original project is available at https://www.figma.com/design/xa0MRHm3P9DAnSh4XUa5s2/Skill-Exchange-Web-App-UI.
+## Features (To be added)
+- User authentication with email and Google
+- User profiles with skills to teach and learn
+- Real-time chat
+- Matching system based on skills
+- Hosted using Firebase
 
-  ## Running the code
-
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
-  
+## Tech Stack
+- HTML / CSS / JavaScript
+- Firebase Authentication, Firestore, Hosting
+- Bootstrap / Tailwind CSS
