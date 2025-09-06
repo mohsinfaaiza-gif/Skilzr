@@ -1,15 +1,11 @@
-# Skilzr- A Skill Exchange Web App
 
-A simple web app to connect people who want to teach and learn different skills.
+  # Skill Exchange Web App UI
 
-## Features (To be added)
-- User authentication with email and Google
-- Profile with skills to teach and learn
-- Real-time chat
-- Matches based on skills
-- Hosted with Firebase
+  This is a code bundle for Skill Exchange Web App UI. The original project is available at https://www.figma.com/design/xa0MRHm3P9DAnSh4XUa5s2/Skill-Exchange-Web-App-UI.
 
-## Tech Stack
-- HTML / CSS / JavaScript
-- Firebase Firestore, Authentication, Hosting
-- Bootstrap / Tailwind CSS
+  ## Running the code
+
+  Run `npm i` to install the dependencies.
+
+  Run `npm run dev` to start the development server.
+  
