@@ -9,6 +9,27 @@ import { ScrollArea } from './ui/scroll-area';
 import { Send, Phone, Video, MoreVertical, Smile, Paperclip, Star } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
+import { chatService } from './services/chat-service';
+
+// In your chat component
+const [chats, setChats] = useState([]);
+const [messages, setMessages] = useState([]);
+const [selectedChat, setSelectedChat] = useState(null);
+
+useEffect(() => {
+  loadUserChats();
+}, []);
+
+const loadUserChats = async () => {
+  try {
+    const currentUser = authService.getCurrentUser();
+    const userChats = await chatService.getUserChats(currentUser.uid);
+    setChats(userChats);
+  } catch (error) {
+    console.error('Error loading chats:', error);
+  }
+};
+
 interface Message {
   id: string;
   sender: 'user' | 'other';
