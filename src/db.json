@@ -1,0 +1,115 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "john@test.com",
+      "password": "123456",
+      "name": "John Doe",
+      "bio": "React developer with 5 years experience",
+      "avatar": "https://i.pravatar.cc/150?img=1",
+      "skills": ["React", "JavaScript", "Node.js"]
+    },
+    {
+      "id": 2,
+      "email": "jane@test.com",
+      "password": "123456",
+      "name": "Jane Smith",
+      "bio": "UX Designer passionate about user research",
+      "avatar": "https://i.pravatar.cc/150?img=2",
+      "skills": ["UI/UX", "Figma", "Adobe XD"]
+    },
+    {
+      "id": 3,
+      "email": "mike@test.com",
+      "password": "123456",
+      "name": "Mike Chen",
+      "bio": "Data scientist and Python expert",
+      "avatar": "https://i.pravatar.cc/150?img=3",
+      "skills": ["Python", "Data Science", "AI"]
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "React Development Bootcamp",
+      "description": "Learn React from zero to hero with hands-on projects",
+      "price": "$50/hour",
+      "rating": 4.8,
+      "reviews": 23,
+      "category": "Programming",
+      "image": "https://via.placeholder.com/300x200/61DAFB/000000?text=React",
+      "instructor": "John Doe"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "title": "UI/UX Design Masterclass",
+      "description": "Master modern design principles and user research",
+      "price": "$40/hour",
+      "rating": 4.9,
+      "reviews": 31,
+      "category": "Design",
+      "image": "https://via.placeholder.com/300x200/FF6B6B/FFFFFF?text=UX+Design",
+      "instructor": "Jane Smith"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "title": "Python for Data Science",
+      "description": "Complete guide to data analysis with Python",
+      "price": "$60/hour",
+      "rating": 4.7,
+      "reviews": 18,
+      "category": "Data Science",
+      "image": "https://via.placeholder.com/300x200/3776AB/FFFFFF?text=Python",
+      "instructor": "Mike Chen"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "title": "JavaScript Advanced Concepts",
+      "description": "Deep dive into closures, promises, and async/await",
+      "price": "$45/hour",
+      "rating": 4.6,
+      "reviews": 27,
+      "category": "Programming",
+      "image": "https://via.placeholder.com/300x200/F7DF1E/000000?text=JavaScript",
+      "instructor": "John Doe"
+    }
+  ],
+  "connections": [
+    {
+      "id": 1,
+      "studentId": 2,
+      "instructorId": 1,
+      "skillId": 1,
+      "status": "pending",
+      "message": "Hi! I'd love to learn React from you.",
+      "timestamp": "2024-01-15T10:30:00Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "chatId": "1_2",
+      "senderId": 2,
+      "message": "Hey John! Thanks for accepting my request.",
+      "timestamp": "2024-01-15T14:30:00Z"
+    },
+    {
+      "id": 2,
+      "chatId": "1_2",
+      "senderId": 1,
+      "message": "Hi Jane! Happy to help you with React. When do you want to start?",
+      "timestamp": "2024-01-15T14:35:00Z"
+    },
+    {
+      "id": 3,
+      "chatId": "1_2",
+      "senderId": 2,
+      "message": "How about this weekend? I'm free Saturday morning.",
+      "timestamp": "2024-01-15T14:40:00Z"
+    }
+  ]
+}
