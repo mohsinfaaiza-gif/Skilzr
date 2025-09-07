@@ -8,6 +8,19 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { Heart, Sparkles, Users } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
+import { authService } from './services/auth-service';
+
+// In your login component
+const handleLogin = async (email, password) => {
+  try {
+    await authService.signIn(email, password);
+    // Redirect to skills page or dashboard
+  } catch (error) {
+    console.error('Login error:', error);
+    // Show error message
+  }
+};
+
 interface LoginSignupProps {
   onComplete: () => void;
 }
