@@ -5,7 +5,60 @@ import { Button } from './ui/button';
 import { Card, CardContent } from './ui/card';
 import { Star, MapPin, MessageCircle, Heart } from 'lucide-react';
 import { useState } from 'react';
+/*
+import { getSkills, sendConnection, getCurrentUser } from '../services/api';
+import { useState, useEffect } from 'react';
 
+const SkillsComponent = () => {
+  const [skills, setSkills] = useState([]);
+
+  useEffect(() => {
+    loadSkills();
+  }, []);
+
+  const loadSkills = async () => {
+    try {
+      const data = await getSkills();
+      setSkills(data);
+    } catch (error) {
+      console.error('Error loading skills:', error);
+    }
+  };
+
+  const handleConnect = async (skillId: number, instructorId: number) => {
+    const user = getCurrentUser();
+    if (!user) {
+      alert('Please login first!');
+      return;
+    }
+    
+    try {
+      await sendConnection(user.id, instructorId, skillId, 'Hi! I want to learn this skill.');
+      alert('Connection request sent!');
+    } catch (error) {
+      alert('Connection sent! (Demo)');
+    }
+  };
+
+  return (
+    <div>
+      {skills.map((skill: any) => (
+        <div key={skill.id} className="skill-card">
+          <img src={skill.image} alt={skill.title} />
+          <h3>{skill.title}</h3>
+          <p>{skill.description}</p>
+          <p>Price: {skill.price}</p>
+          <p>Rating: {skill.rating} ({skill.reviews} reviews)</p>
+          <p>By: {skill.instructor}</p>
+          <button onClick={() => handleConnect(skill.id, skill.userId)}>
+            Connect
+          </button>
+        </div>
+      ))}
+    </div>
+  );
+};
+*/
 interface SkillCardProps {
   user: {
     id: string;

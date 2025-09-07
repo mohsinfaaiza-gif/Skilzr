@@ -8,6 +8,62 @@ import { Badge } from './ui/badge';
 import { ScrollArea } from './ui/scroll-area';
 import { Send, Phone, Video, MoreVertical, Smile, Paperclip, Star } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
+/*
+import { getMessages, sendMessage, getCurrentUser } from '../services/api';
+import { useState, useEffect } from 'react';
+
+const ChatComponent = () => {
+  const [messages, setMessages] = useState([]);
+  const [newMessage, setNewMessage] = useState('');
+
+  useEffect(() => {
+    loadMessages();
+  }, []);
+
+  const loadMessages = async () => {
+    try {
+      const data = await getMessages('1_2'); // Sample chat
+      setMessages(data);
+    } catch (error) {
+      console.error('Error loading messages:', error);
+    }
+  };
+
+  const handleSendMessage = async () => {
+    const user = getCurrentUser();
+    if (!user || !newMessage.trim()) return;
+
+    try {
+      await sendMessage('1_2', user.id, newMessage);
+      setNewMessage('');
+      loadMessages(); // Refresh messages
+    } catch (error) {
+      alert('Message sent! (Demo)');
+      setNewMessage('');
+    }
+  };
+
+  return (
+    <div>
+      <div className="messages">
+        {messages.map((msg: any) => (
+          <div key={msg.id} className={`message ${msg.senderId === getCurrentUser()?.id ? 'sent' : 'received'}`}>
+            <p>{msg.message}</p>
+            <small>{new Date(msg.timestamp).toLocaleTimeString()}</small>
+          </div>
+        ))}
+      </div>
+      <div className="message-input">
+        <input
+          value={newMessage}
+          onChange={(e) => setNewMessage(e.target.value)}
+          placeholder="Type a message..."
+        />
+        <button onClick={handleSendMessage}>Send</button>
+      </div>
+    </div>
+  );
+}; */
 
 interface Message {
   id: string;

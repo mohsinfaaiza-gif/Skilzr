@@ -8,6 +8,50 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { Heart, Sparkles, Users } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
+/*import { login } from '../services/api';
+import { useState } from 'react';
+
+const LoginComponent = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const handleLogin = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      await login(email, password);
+      alert('Login successful!');
+      window.location.href = '/skills';
+    } catch (error) {
+      alert('Login failed! Try: john@test.com / 123456');
+    }
+    setLoading(false);
+  };
+
+  return (
+    <form onSubmit={handleLogin}>
+      <input 
+        type="email" 
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        placeholder="Try: john@test.com"
+        required
+      />
+      <input 
+        type="password" 
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        placeholder="Try: 123456"
+        required
+      />
+      <button type="submit" disabled={loading}>
+        {loading ? 'Logging in...' : 'Login'}
+      </button>
+    </form>
+  );
+}; */
+
 interface LoginSignupProps {
   onComplete: () => void;
 }

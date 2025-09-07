@@ -8,6 +8,8 @@ import { Badge } from './ui/badge';
 import { SkillCard } from './SkillCard';
 import { Search, Filter, TrendingUp, Users, BookOpen, Palette, Code, Music, Languages, Dumbbell } from 'lucide-react';
 
+
+
 export function SkillMatching() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
